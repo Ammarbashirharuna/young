@@ -1,31 +1,87 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
-    text-decoration: none;
+    
 }
-.container-fluid{
+h1{
+    text-align: center;
+}
+
+.container {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content:space-between;
+    margin-top: 5%;
 
+}
+.container :first-child{
+    background: rgb(165, 161, 161);
+    padding: 5px;
+}
+.container :first-child h3{
+    border: 3px solid black;
+    width: 6.5rem;
+    background-color: palevioletred;
+    margin-left: 20rem;
+    margin-top:-5px ;
+
+    
+}
+.container :nth-child(2){
+    background: rgb(161, 156, 156);
+    padding: 5px;
+}
+.container :nth-child(2) h3{
+    border: 3px solid black;
+    width: 6.5rem;
+    background-color: rgb(243, 81, 81);
+    margin-left: 20rem;
+    margin-top:-5px ;
+
+    
+}
+.container :last-child{
+    background: rgb(167, 159, 159);
+    padding: 5px;
+}
+.container :last-child h3{
+    border: 3px solid black;
+    width: 6.5rem;
+    background-color: rgb(228, 183, 178);
+    margin-left: 20rem;
+    margin-top:-5px ;
+
+    
+}
+
+@media(max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        justify-items: center;
+        justify-content: space-between;
+    
+    }
+    .container div{
+        width: 30%;
+        height:40%;
+    }
+    
+   
+        
+        
+    }
+   
+
+  
+
+    
     
 
 
-}
-.container-fluid :first-child{
-    border: 2px solid black;
-    height: 20rem;
-    font-size: 1.5rem;
-    background: rgb(211, 208, 208);
-    width: 70%;
-    
-}
 
-.container-fluid :first-child h2 span{
-    background: plum;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
